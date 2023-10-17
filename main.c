@@ -1,5 +1,9 @@
 #include "main.h"
 
+char *program_name;
+int history;
+alias_t *aliases;
+
 
 /**
  * signal_handler - handles the SIGINT signal by printing a new prompt
@@ -105,13 +109,12 @@ int execute_command(char *command, char **args, char **frnt)
 
 int main(int argc, char *argv[])
 {
-	char *program_name = argv[0];
-	int history = 1;
-	alias_t *aliases;
-	int ret = 0, retn;
+	int ret = 0;
+	int retn;
 	int *exe_ret = &retn;
 	char *prompt = "$ ", *new_line = "\n";
-
+	program_name = argv[0];
+	history = 1;
 	aliases = NULL;
 	signal(SIGINT, signal_handler);
 
