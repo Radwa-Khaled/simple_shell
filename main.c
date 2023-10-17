@@ -1,15 +1,8 @@
 #include "main.h"
-<<<<<<< HEAD
-char *program_name;
-int history;
-alias_t *aliases;
-=======
 
 char *program_name;
 int history;
 alias_t *aliases;
-
->>>>>>> 9b918fa601fa37325efa76f2065f6e0849d47890
 
 /**
  * signal_handler - handles the SIGINT signal by printing a new prompt
