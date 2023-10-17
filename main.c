@@ -105,15 +105,13 @@ int execute_command(char *command, char **args, char **frnt)
 
 int main(int argc, char *argv[])
 {
-	char *program_name;
-	int history;
+	char *program_name = argv[0];
+	int history = 1;
 	alias_t *aliases;
 	int ret = 0, retn;
 	int *exe_ret = &retn;
 	char *prompt = "$ ", *new_line = "\n";
 
-	program_name = argv[0];
-	history = 1;
 	aliases = NULL;
 	signal(SIGINT, signal_handler);
 
