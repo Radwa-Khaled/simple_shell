@@ -6,7 +6,7 @@
 #include <signal.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-//#include "sys/wait.h"
+#include "sys/wait.h"
 #include <stdlib.h>
 #include <unistd.h>
 #include <errno.h>
@@ -170,4 +170,4 @@ void clean_up(void);
 int handle_interactive(int *exe_ret);
 int handle_non_interactive(int *exe_ret);
 
-#endif // MAIN_H_INCLUDED
+#endif
