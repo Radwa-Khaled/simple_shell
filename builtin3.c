@@ -45,7 +45,7 @@ int shellby_setenv(char **args, char __attribute__((__unused__)) **front)
 	int index; /* loop variable*/
 
 	if (!args[0] || !args[1])
-		return (create_error(args, -1))
+		return (create_error(args, -1));
 	new_value = malloc(_strlen(args[0]) + 1 + _strlen(args[1]) + 1);
 	if (!new_value)/* if allocation fails, return an error */
 		return (create_error(args, -1));
