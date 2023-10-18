@@ -1,9 +1,5 @@
 #include "main.h"
 
-char *program_name;
-int history;
-alias_t *aliases;
-
 /**
  * signal_handler - handles the SIGINT signal by printing a new prompt
  * @sign: the signal number
